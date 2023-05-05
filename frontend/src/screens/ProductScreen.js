@@ -8,7 +8,7 @@ import axios from "axios";
 
 const ProductScreen = ({ match }) => {
   const [product, setProduct] = useState({});
-  const { id } = useParams()
+  const { id } = useParams() //Get URI data
 
   useEffect(() => {
     const fetchProduct = async () => {
